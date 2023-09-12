@@ -39,6 +39,7 @@ a {
   color: #ffffff;
   background: #171100;
   border-radius: 999px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -62,6 +63,13 @@ a {
   font-weight: 700;
   line-height: 1.26; /* 126.316% */
   letter-spacing: -0.76px;
+}
+
+.heading_lv3 {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
 }
 
 /* ################ Header ################*/
@@ -283,4 +291,114 @@ a {
   padding-right: 8px;
 }
 
-/* ################  ################*/
+/* ################ Popular ################*/
+.popular {
+  padding: 200px 0;
+}
+
+.popular .body .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular .body .row .content-left .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
+.popular .body .row .content-right {
+  display: flex;
+  margin-top: 42px;
+}
+
+.popular .body .row .content-right .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb900;
+  color: #ffb900;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.popular .body .row .content-right .icon:hover {
+  color: #fff;
+  background: #ffb900;
+}
+
+.popular .body .row .content-right .arrow-left {
+  margin-right: 10px;
+}
+
+.popular__list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.popular__list .item {
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.popular__list .item:hover {
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popular__list .item .images {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.popular__list .item .info {
+  padding: 16px 22px 22px;
+}
+
+.popular__list .item .info .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular__list .item .info .row .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.popular__list .item .info .row .stars i {
+  padding-right: 8px;
+}
+
+.popular__list .item .info .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  height: 52px;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.popular__list .item .info .row-bottom {
+  margin-top: 12px;
+}
+
+.popular__list .item .info .row-bottom .btn-popular:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
