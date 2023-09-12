@@ -402,3 +402,74 @@ a {
   background: var(--primary-color);
   color: #fff;
 }
+
+/* ################ Feedback ################*/
+.feedback {
+  padding: 96px;
+  background: #2e2100;
+}
+
+.feedback .body {
+  display: flex;
+}
+
+.feedback .info .avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.feedback .info .name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+
+.feedback .info .major {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
+
+.feedback .info .dots {
+  display: flex;
+  margin: 28px 0 0 0;
+}
+
+.feedback .info .dots .dot {
+  width: 6px;
+  height: 6px;
+  background: #634700;
+  border-radius: 50%;
+}
+
+.feedback .info .dots .dot.active {
+  background: var(--primary-color);
+}
+
+.feedback .info .dots .dot:not(:first-child) {
+  margin-left: 6px;
+}
+
+.feedback .quote {
+  width: 770px;
+  margin-left: auto;
+}
+
+.feedback .quote .icon-quote {
+  margin-left: -30px;
+}
+
+.feedback .quote .desc {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54; /* 153.846% */
+}
