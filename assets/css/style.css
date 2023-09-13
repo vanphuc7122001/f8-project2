@@ -555,4 +555,92 @@ a {
 
 .blog .blog-list {
   margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.blog .blog-list .item {
+  width: 33.33%;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blog .blog-list .item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog-list .item .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.blog-list .item .info {
+  padding: 20px 20px 28px 30px;
+}
+
+.blog-list .info .date {
+  display: inline-block;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+  position: relative;
+}
+
+.blog-list .info .date::before {
+  content: "";
+  display: inline-block;
+  margin: 0 6px 2px 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.blog-list .info .date::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  left: 0;
+  bottom: -12px;
+  height: 1px;
+  background: #e2dfda;
+  border-radius: 0.5px;
+  right: -27px;
+}
+
+.blog-list .info .question {
+  margin-top: 24px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+
+.blog-list .info .cta-blog {
+  margin-top: 24px;
+}
+
+.blog-list .info .cta-blog:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.blog .dots {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.blog .dots .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: black;
+}
+
+.blog .dots .dot.active {
+  background: var(--primary-color);
 }
