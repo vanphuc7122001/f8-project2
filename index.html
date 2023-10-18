@@ -13,6 +13,7 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responesive.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,11 +37,20 @@
     <header class="header fixed">
       <div class="main-content">
         <div class="body">
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              ></path>
+            </svg>
+          </label>
+
           <!-- Logo -->
           <img src="./assets/images/logo.svg" alt="Lesson" class="logo" />
 
           <!-- Nav -->
-          <nav class="nav">
+          <nav class="nav" id="navbar__app">
             <ul class="nav__list">
               <li class="nav__item active">
                 <a href="#home">Home</a>
@@ -54,17 +64,34 @@
               <li class="nav__item">
                 <a href="#reviews">Reviews</a>
               </li>
+              <li class="seperate"></li>
+              <li class="nav__item show-on-mobile">
+                <a href="#">Sign up</a>
+              </li>
             </ul>
           </nav>
 
           <!-- Action -->
-          <div class="action">
+          <div class="action show-on-tablet">
             <a href="#!" class="btn action__sign-up">Sign Up</a>
           </div>
         </div>
       </div>
     </header>
     <!-- End header -->
+    <header class="header-menu">
+      <input type="checkbox" name="" id="menu-checkbox" hidden />
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <div class="menu-drawer show-on-mobile">
+        <img src="./assets/images/logo.svg" alt="Lesson" class="logo" />
+        <nav id="nav__tablet"></nav>
+      </div>
+    </header>
+    <script>
+      const pc = document.getElementById("navbar__app");
+      const tablet = document.getElementById("nav__tablet");
+      tablet.innerHTML = pc.innerHTML;
+    </script>
 
     <main class="main">
       <!-- Begin hero -->
@@ -312,7 +339,9 @@
                 new career.
               </p>
               <p class="desc">Lesson Impact Report (2022)</p>
-              <a href="#!" class="btn btn-sign-up">Sign Up</a>
+              <div class="featured-btn">
+                <a href="#!" class="btn btn-sign-up">Sign Up</a>
+              </div>
             </div>
           </div>
           <div class="body body-bottom">
